@@ -1,11 +1,9 @@
 name: Issues notified
-on:
-  issues:
-    types: [opened]
+on: issues
 jobs:
   Show_issue_details:
     runs-on: ubuntu-latest
     steps:
       - name: Get github context
         run: |
-          echo A issue on created $"{{ to JSON(github)}}"
+          echo A issue on created $"{{ toJSON(github.event) }}"
