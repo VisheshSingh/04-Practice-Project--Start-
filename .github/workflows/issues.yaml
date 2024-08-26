@@ -7,5 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get github context
-      - run: |
+        run: |
           echo A issue on created $"{{ to JSON(github)}}"
