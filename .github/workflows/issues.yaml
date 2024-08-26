@@ -6,4 +6,4 @@ jobs:
     steps:
       - name: Get github context
         run: |
-          echo A issue on created $"{{ toJSON(github.event) }}"
+          echo A issue on created "${{ toJSON(github.event) }}"
